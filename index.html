@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Riot demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="demo.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script>html5.addElements('demo')</script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <h1>Riot demo</h1>
+
+    <demo></demo>
+
+    <!-- Include Riot.js -->
+    <script src="bower_components/riot/riot.js"></script>
+
+    <!-- Include demo tag -->
+    <script src="dist/tags/demo.js"></script>
+
+    <script>
+    riot.mount('demo', {
+      title: 'A title',
+      items: [
+        { title: 'Foo' },
+        { title: 'bar', hidden: true },
+        { title: 'baz' },
+        { title: 'quux' }
+      ]
+    })
+    </script>
+
+  </body>
+
+</html>
