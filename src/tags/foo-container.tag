@@ -6,8 +6,9 @@
 
   <h3>And this is the foo element:</h3>
 
-  <foo></foo>
+  <foo numbers={ numbers }></foo>
 
   this.title = opts.title
+  this.numbers = opts.numbers
 
 </foo-container>
