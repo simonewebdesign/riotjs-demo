@@ -20,12 +20,17 @@
 
     <demo></demo>
 
+    <foo-container></foo-container>
+
     <!-- Include Riot.js -->
     <script src="bower_components/riot/riot.js"></script>
 
-    <!-- Include demo tag -->
+    <!-- Include tags -->
     <script src="dist/tags/demo.js"></script>
+    <script src="dist/tags/foo-container.js"></script>
+    <script src="dist/tags/subtags/foo.js"></script>
 
+    <!-- Mount tags -->
     <script>
     riot.mount('demo', {
       title: 'A title',
@@ -35,6 +40,14 @@
         { title: 'baz' },
         { title: 'quux' }
       ]
+    })
+
+    riot.mount('foo-container', {
+      title: 'A foo container',
+      foo: {
+        bar: 'barrrrr',
+        baz: 'bazzzzzz'
+      },
     })
     </script>
 

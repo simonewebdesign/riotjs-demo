@@ -1,7 +1,8 @@
 riot.tag('demo', '<h2>{ title }</h2> <ul> <li each="{ item, i in items }">{ item.title }</li> </ul> <form onsubmit="{ add }"> <input> <button>Add #{ items.length + 1 }</button> </form> <button onclick="{ changeTitle }">Change title to something else</button>', function(opts) {
 
   this.title = opts.title,
-  this.items = opts.items
+  this.items = opts.items,
+  this.hidden = opts.hidden
 
   this.add = function(e) {
     var newitem = e.target[0]

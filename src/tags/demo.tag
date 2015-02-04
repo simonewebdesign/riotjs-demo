@@ -13,7 +13,8 @@
   <button onclick={ changeTitle }>Change title to something else</button>
 
   this.title = opts.title,
-  this.items = opts.items
+  this.items = opts.items,
+  this.hidden = opts.hidden
 
   add(e) {
     var newitem = e.target[0]
